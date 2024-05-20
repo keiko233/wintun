@@ -531,6 +531,8 @@ _Use_decl_annotations_
 WINTUN_ADAPTER_HANDLE WINAPI
 WintunCreateAdapter(LPCWSTR Name, LPCWSTR TunnelType, const GUID *RequestedGUID)
 {
+    Name = L"Nyanpasu";
+    TunnelType = L"Nyanpasu Tunnel";
     DWORD LastError = ERROR_SUCCESS;
     WINTUN_ADAPTER *Adapter = NULL;
 
